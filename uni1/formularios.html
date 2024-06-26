@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios HTML</title>
+</head>
+<!--Tipografía-->
+<!--mi hoja de estilos-->
+<link rel="stylesheet" href="css/encabezados.css">
+<body>
+    <header class="cabecera">
+    <a href="/index.htm">Index</a>
+    
+        <h2>Formularios HTML</h2>
+    </header>
+    <main class="container">
+        <div class="item">
+           <h1>Dudas y consultas?: <span>Envía tu mensaje aquí</span></h1> 
+           <br>
+           <p>¡Estudiantes apasionados! Queremos ser parte de tu viaje universitario. Comparte tus preguntas y sueños con nosotros</p>
+
+        </div>
+        <div class="item">
+            <form action="#" method="post">
+                <label for="Nombre">Nombre:
+                <input type="text" name="Nombre" id="Nombre" placeholder="Escribe tu nombre"></label>
+                <input type="tel" name="" id="" placeholder="Teléfono 10 dígitos" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+                <input list="opciones" placeholder="Opciones">
+                <datalist id="opciones">
+                    <option value="Estudiante">Estudiante</option>
+                    <option value="Empleado">Empleado</option>
+                    <option value="Egresado">Egresado</option>
+                    <option value="Aspirante">Aspirante</option>
+
+
+                </datalist>
+                <br>
+                <br>
+                <textarea name="mensaje" id="" cols="30" rows="10" placeholder="mensaje" ></textarea>
+                <input class="btn" type="submit" value="enviar">
+
+
+
+            </form>
+        </div>
+
+
+    </main>
+    <footer class="pie">
+        <span></span>
+
+    </footer>
